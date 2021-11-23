@@ -1,3 +1,4 @@
 {
- "DB": "LOAD"
+ "DB": "LOAD",
+ "DBBuildMethod": 2
 }
