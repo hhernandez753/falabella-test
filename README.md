@@ -5,7 +5,7 @@ REST API con los siguientes Endpoint:
   + Parametro URL: domain obligatoiro. Ej.: AAAA000
   + Respuesta: Objeto JSON. 
     + Forma: {"mssg": "[Mensaje]", "patentId": [ID de Patente (Int)]}
-  + Ejemplo Petición: http://<URL Base API>/patent-domain/AAAA000
+  + Ejemplo Petición: http://[URL Base API]/patent-domain/AAAA000
 
 + /patent-id/[id]
   + Metodo: GET
