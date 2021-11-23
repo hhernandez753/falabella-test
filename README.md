@@ -26,4 +26,4 @@ REST API con los siguientes Endpoint:
 
 # Ejecutar y probar aplicación
 + python3 web_server.py
-+ Ingresar en navegador web (Mozilla Firefox, Google Chrome, Microsoft Edge) la url: http://localhost:8080/
++ URL Base de la API: http://localhost:8080/
