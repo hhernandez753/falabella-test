@@ -1,4 +1,4 @@
-# Prueba técnica
+# Prueba Técnica
 REST API con los siguientes Endpoint:
 + /patent-domain/<domain>
   Metodo: GET
