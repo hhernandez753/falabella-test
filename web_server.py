@@ -135,9 +135,9 @@ appConf = json.loads(open(baseDir + 'config/app_cfg.json').read())
 if appConf['DB'] == 'LOAD': patentsDB = loadPatentsFromDBFile(fileDB=baseDir + 'db/patentsDB.json')
 elif appConf['DB'] == 'BUILD':
     if appConf['DBBuildMethod'] == 1: # Genera 456.976.000 Combinaciones de Patentes con la forma AAAA000 excluyendo la Ñ
-        patentsDB = buildPatentsMethod01(saveDB=True, fileDB=baseDir + 'db/patentsDB.json')
+        patentsDB = buildPatentsMethod01()
     elif appConf['DBBuildMethod'] == 2: # Genera 26.000 Combinaciones de Patentes con la forma AAAA000 excluyendo la Ñ
-        patentsDB = buildPatentsMethod02(saveDB=True, fileDB=baseDir + 'db/patentsDB.json')
+        patentsDB = buildPatentsMethod02()
 else: patentsDB = {}
 
 app = Flask(__name__)
