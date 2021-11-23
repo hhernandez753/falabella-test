@@ -6,18 +6,18 @@ REST API con los siguientes Endpoint:
   + Respuesta: Objeto JSON. Forma: {"mssg": "[Mensaje]", "patentId": [ID de Patente (Int)]}
   + Ejemplo Petición: http://<URL Base API>/patent-domain/AAAA000
 
-+ /patent-id/{id}
++ /patent-id/[id]
   + Metodo: GET
   + Parametro URL: id obligatoiro. Ej.: 1000
-  + Respuesta: Objeto JSON. Forma: {"mssg": "<Mensaje>", "patentDomain": <Código Alfanumérico de Patente (String)>}
-  + Ejemplo Petición: http://<URL Base API>/patent-id/1000
+  + Respuesta: Objeto JSON. Forma: {"mssg": "[Mensaje]", "patentDomain": [Código Alfanumérico de Patente (String)]}
+  + Ejemplo Petición: http://[URL Base API]/patent-id/1000
   
 + /matrix-sum
   + Metodo: POST
   + Header: Content-Type:  application/json
-  + Body: Objeto JSON. Forma: {"R": <Int > 0>, "C": <Int > 0>, "Z": <0 < Int <= 1.000.000>, "X": <Int >= 0>, "Y": <Int >= 0>}
-  + Respuesta: Objeto JSON. Forma: {"mssg": "<Mensaje>", "sum": <Sumatoria de la Matriz (Int)>}
-  + Ejemplo Petición: http://<URL Base API>/matrix-sum
+  + Body: Objeto JSON. Forma: {"R": [Int > 0], "C": [Int > 0], "Z": [0 < Int <= 1.000.000], "X": [Int >= 0], "Y": [Int >= 0]}
+  + Respuesta: Objeto JSON. Forma: {"mssg": "[Mensaje]", "sum": [Sumatoria de la Matriz (Int)]}
+  + Ejemplo Petición: http://[URL Base API]/matrix-sum
 
 # Dependecias
 + pyhton3 (>=3.5)
