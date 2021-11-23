@@ -1,12 +1,12 @@
 # Prueba Técnica
 REST API con los siguientes Endpoint:
-+ /patent-domain/<domain>
++ /patent-domain/{domain}
   + Metodo: GET
   + Parametro URL: domain obligatoiro. Ej.: AAAA000
   + Respuesta: Objeto JSON. Forma: {"mssg": "<Mensaje>", "patentId": <ID de Patente (Int)>}
   + Ejemplo Petición: http://<URL Base API>/patent-domain/AAAA000
 
-+ /patent-id/<id>
++ /patent-id/{id}
   + Metodo: GET
   + Parametro URL: id obligatoiro. Ej.: 1000
   + Respuesta: Objeto JSON. Forma: {"mssg": "<Mensaje>", "patentDomain": <Código Alfanumérico de Patente (String)>}
